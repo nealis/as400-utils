@@ -1,6 +1,6 @@
 <?php
 
-namespace As400Utils;
+namespace Nealis\As400Utils;
 
 trait XMLToolkitAwareTrait
 {

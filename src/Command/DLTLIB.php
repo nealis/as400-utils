@@ -1,8 +1,8 @@
 <?php
 
-namespace As400Utils\Command;
+namespace Nealis\As400Utils\Command;
 
-use As400Utils\Command;
+use Nealis\As400Utils\Command;
 use Exception;
 
 /**

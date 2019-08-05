@@ -1,6 +1,6 @@
 <?php
 
-namespace As400Utils;
+namespace Nealis\As400Utils;
 
 use Exception;
 use Psr\Log\LoggerAwareInterface;

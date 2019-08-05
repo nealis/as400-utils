@@ -3,12 +3,12 @@
 /**
  * @author Cassiano Vailati
  */
-namespace As400Utils\Shell;
-use As400Utils\XMLToolkit;
+namespace Nealis\As400Utils\Shell;
+use Nealis\As400Utils\XMLToolkit;
 use Psr\Log\LoggerAwareInterface;
 use Psr\Log\LoggerAwareTrait;
 use Psr\Log\LoggerInterface;
-use As400Utils\Command as IBMCommand;
+use Nealis\As400Utils\Command as IBMCommand;
 
 /**
  * IBMi Shell Command
