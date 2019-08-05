@@ -1,0 +1,23 @@
+{
+  "name": "nealis/as400-utils",
+  "description": "Some useful class to be used when your project highly depends on AS400",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Guido Sangiovanni",
+      "email": "sangiovanni.guido@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Nealis\\As400Utils\\": "src/"
+    }
+  },
+  "require": {
+    "psr/log": "^1.1",
+    "zendtech/ibmitoolkit": "^1.7",
+    "doctrine/dbal": "^2.9",
+    "monolog/monolog": "^1.24"
+  }
+}
