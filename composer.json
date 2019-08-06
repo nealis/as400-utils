@@ -16,8 +16,12 @@
   },
   "require": {
     "psr/log": "^1.1",
-    "zendtech/ibmitoolkit": "^1.7",
     "doctrine/dbal": "^2.9",
     "monolog/monolog": "^1.24"
-  }
+  },
+  "include-path": [
+    ":/usr/local/nealis/lib/PHP_Toolkit",
+    ":/usr/local/zendsvr6/share/ToolkitAPI",
+    ":/usr/local/zendphp7/share/ToolkitAPI"
+  ]
 }
