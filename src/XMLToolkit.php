@@ -27,10 +27,10 @@ class XMLToolkit implements LoggerAwareInterface
 
     /**
      * XMLToolkit constructor.
-     * @param $db2Conn
-     * @param Logger|null $logger
+     * @param Connection $db2Conn
+     * @param LoggerInterface $logger
      */
-    public function __construct(Connection $db2Conn, Logger $logger=null)
+    public function __construct(Connection $db2Conn, LoggerInterface $logger=null)
     {
         $this->setConn($db2Conn);
         $this->setLogger($logger);
@@ -49,7 +49,7 @@ class XMLToolkit implements LoggerAwareInterface
             try {
 
                 $namingMode = DB2_I5_NAMING_ON;
-                $toolkitServiceObj = ToolkitService::getInstance($this->getConn(), $namingMode);
+                $toolkitServiceObj = ToolkitService::getInstance($this->getConn()->getWrappedConnection()->getWrappedResourceHandle(), $namingMode);
                 $toolkitServiceObj->setToolkitServiceParams(array(
                     'stateless' => true
                 ));
